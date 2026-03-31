@@ -1,11 +1,11 @@
-DeltaFlow: An Efficient Multi-frame Scene Flow Estimation Method
+TeFlow: Enabling Multi-frame Supervision for Self-Supervised Feed-forward Scene Flow Estimation
 ---
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.19053-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.19053)
 <!-- [![poster](https://img.shields.io/badge/NeurIPS'25|Poster-6495ed?style=flat&logo=Shotcut&logoColor=wihte)](https://drive.google.com/file/d/1uh4brNIvyMsGLtoceiegJr-87K1wE_qo/view?usp=sharing) -->
 <!-- [![video](https://img.shields.io/badge/video-YouTube-FF0000?logo=youtube&logoColor=white)](https://youtu.be/YJ0HMZXnqxE) -->
 
-<img width="1864" height="756" alt="deltaflow_cover" src="https://github.com/user-attachments/assets/a7348910-8073-4703-8c0b-57c613401552" />
+<!-- <img width="1864" height="756" alt="deltaflow_cover" src="https://github.com/user-attachments/assets/a7348910-8073-4703-8c0b-57c613401552" /> -->
 
 ## Quick Run
 
