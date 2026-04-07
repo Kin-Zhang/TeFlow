@@ -2,6 +2,7 @@ TeFlow: Enabling Multi-frame Supervision for Self-Supervised Feed-forward Scene 
 ---
 
 [![arXiv](https://img.shields.io/badge/arXiv-2602.19053-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2602.19053)
+[![pdfreview](https://img.shields.io/badge/OpenReview-PDF-blue)](https://github.com/Kin-Zhang/TeFlow/discussions/1)
 <!-- [![poster](https://img.shields.io/badge/NeurIPS'25|Poster-6495ed?style=flat&logo=Shotcut&logoColor=wihte)](https://drive.google.com/file/d/1uh4brNIvyMsGLtoceiegJr-87K1wE_qo/view?usp=sharing) -->
 <!-- [![video](https://img.shields.io/badge/video-YouTube-FF0000?logo=youtube&logoColor=white)](https://youtu.be/YJ0HMZXnqxE) -->
 
@@ -18,6 +19,8 @@ Here is the overall pipeline of our method:
 <p align="center">
   <img alt="teflow_pipeline" src="https://github.com/user-attachments/assets/0afd5c20-2bcc-4a02-aad0-8d8daf04100f" />
 </p>
+
+To easy understand the core method, I copy the core file: [self supervised loss](./selfsupervise.py#L270). Feel free to have a quick look at the function name `teflowLoss` and `multi_frames_clusterLoss` to understand the core method.
 
 ### Training
 
@@ -45,11 +48,11 @@ Here is the pretrained weights link table for different training datasets (Note 
 
 | Train Dataset | Pretrained ckpt Link |
 |:--------:|:--------------:|
-| Argoverse 2 | [huggingface](https://huggingface.co/kin-zhang/OpenSceneFlow/resolve/main/teflow/deltaflow-av2.ckpt) |
-| Waymo Open Dataset | [huggingface](https://huggingface.co/kin-zhang/OpenSceneFlow/resolve/main/teflow/deltaflow-waymo.ckpt) |
-| nuScenes | [huggingface](https://huggingface.co/kin-zhang/OpenSceneFlow/resolve/main/teflow/deltaflow-nus.ckpt) |
+| Argoverse 2 | [huggingface](https://huggingface.co/kin-zhang/OpenSceneFlow/resolve/main/teflow/teflow-av2.ckpt) |
+| Waymo Open Dataset | [huggingface](https://huggingface.co/kin-zhang/OpenSceneFlow/resolve/main/teflow/teflow-waymo.ckpt) |
+| nuScenes | [huggingface](https://huggingface.co/kin-zhang/OpenSceneFlow/resolve/main/teflow/teflow-nus.ckpt) |
 
-Please check the local evaluation result (raw terminal output screenshot) in [this discussion thread](TODO). 
+Please check the local evaluation result (raw terminal output screenshot) in [this discussion thread](https://github.com/Kin-Zhang/TeFlow/discussions/3). 
 You can also run the evaluation by yourself with the following command with trained weights:
 ```bash
 python eval.py checkpoint=${path_to_pretrained_weights} dataset_path=${demo_data_path}
