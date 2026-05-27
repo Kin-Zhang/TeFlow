@@ -69,10 +69,12 @@ To make your own visualizations, please refer to the [OpenSceneFlow](https://git
 ```
 @inproceedings{zhang2026teflow,
   title = {{TeFlow}: Enabling Multi-frame Supervision for Self-Supervised Feed-forward Scene Flow Estimation},
-  author={Zhang, Qingwen and Jiang, Chenhan and Zhu, Xiaomeng and Miao, Yunqi and Zhang, Yushan and Andersson, Olov and Jensfelt, Patric},
+  author = {Zhang, Qingwen and Jiang, Chenhan and Zhu, Xiaomeng and Miao, Yunqi and Zhang, Yushan and Andersson, Olov and Jensfelt, Patric},
+  title = {TeFlow: Enabling Multi-frame Supervision for Self-Supervised Feed-forward Scene Flow Estimation},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
   year = {2026},
-  booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
-  pages = {},
+  pages = {3667-3676}
 }
 ```
 This work was partially supported by the Wallenberg AI, Autonomous Systems and Software Program (WASP) funded by the Knut and Alice Wallenberg Foundation and Prosense (2020-02963) funded by Vinnova. 
